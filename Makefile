@@ -25,7 +25,7 @@ CFLAGS := +zxn -subtype=nex -vn -startup=1 -clib=sdcc_iy -m $(CFLAGS_OPT)
 
 all:
 	$(MKDIR) $(BINDIR)
-	zcc $(CFLAGS) $(DEBUG) @zproject.lst -o $(BINDIR)/zxnext_dma_sample -create-app
+	zcc $(CFLAGS) $(DEBUG) -pragma-include:config/zpragma.inc @zproject.lst -o $(BINDIR)/zxnext_dma_sample -create-app
 
 debug: DEBUG = $(DEBUGFLAGS)
 

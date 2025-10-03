@@ -1,4 +1,4 @@
+zxnext/src/bank.c
+zxnext/src/dma.c
 src/samples.asm
-src/bank.c
-src/dma.c
 src/main.c
